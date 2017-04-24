@@ -1,0 +1,74 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Eureka (3.0.0)
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.2.0):
+    - GoogleMaps/Base (= 2.2.0)
+  - KeychainAccess (3.0.2)
+  - Kingfisher (3.6.2)
+  - ObjectMapper (2.2.5)
+  - PhoneNumberKit (1.2.3):
+    - PhoneNumberKit/PhoneNumberKitCore (= 1.2.3)
+    - PhoneNumberKit/UIKit (= 1.2.3)
+  - PhoneNumberKit/PhoneNumberKitCore (1.2.3)
+  - PhoneNumberKit/UIKit (1.2.3):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - PromiseKit (4.1.7):
+    - PromiseKit/Foundation (= 4.1.7)
+    - PromiseKit/QuartzCore (= 4.1.7)
+    - PromiseKit/UIKit (= 4.1.7)
+  - PromiseKit/CorePromise (4.1.7)
+  - PromiseKit/Foundation (4.1.7):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.1.7):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.1.7):
+    - PromiseKit/CorePromise
+  - SideMenu (2.3.1)
+  - SwiftDate (4.1.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Eureka (from `https://github.com/xmartlabs/Eureka.git`)
+  - GoogleMaps (~> 2.2)
+  - GooglePlaces (~> 2.2)
+  - KeychainAccess (~> 3.0)
+  - Kingfisher (~> 3.0)
+  - ObjectMapper (~> 2.2)
+  - PhoneNumberKit (~> 1.2)
+  - PromiseKit (~> 4.0)
+  - SideMenu
+  - SwiftDate (~> 4.0)
+  - SwiftyJSON (~> 3.1)
+
+EXTERNAL SOURCES:
+  Eureka:
+    :git: https://github.com/xmartlabs/Eureka.git
+
+CHECKOUT OPTIONS:
+  Eureka:
+    :commit: cd0a057a2612286340e5b7f8ba5d06e6fcd4e2bd
+    :git: https://github.com/xmartlabs/Eureka.git
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Eureka: 5b9418d7bfdc21ca977d69d124a6409f3e9af2c7
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
+  KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
+  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
+  ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
+  PhoneNumberKit: 1e5cca669113fc361a8c82ec1ee559c62b8cd0f7
+  PromiseKit: 779f2e41faf62d854e7593026ddbcb0bb5c5002d
+  SideMenu: 2a3c3da0b3d5f78a047b2271bb7398260fcd7e3d
+  SwiftDate: ae615078806a322183e5f64e02e80ca8d939bf48
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 2f9d8aa06fe65c2da5cd5e6acb055ea8938c7ba5
+
+COCOAPODS: 1.2.1

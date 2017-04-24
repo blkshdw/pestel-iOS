@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l6h-bL-3qj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Регистрация-->
+        <scene sceneID="hzf-zc-2Ob">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationPhoneInputViewController" title="Регистрация" id="l6h-bL-3qj" customClass="RegistrationPhoneInputViewController" customModule="pestle" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EfO-0T-kXu"/>
+                        <viewControllerLayoutGuide type="bottom" id="5il-jL-zC0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bwo-nP-SwZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeO-OX-xvE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpz-lo-vCJ">
+                                        <rect key="frame" x="36" y="212" width="303" height="223"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Закажи цветы с Pestle!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvQ-Km-eYl">
+                                                <rect key="frame" x="0.0" y="0.0" width="303" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8b1-V4-CZ0">
+                                                <rect key="frame" x="61" y="59" width="181" height="24"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+7 900 000-00-00" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="OK1-DM-yFV" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
+                                                        <rect key="frame" x="0.0" y="0.0" width="181" height="24"/>
+                                                        <color key="textColor" red="0.2392156869" green="0.70588237050000002" blue="0.96470588450000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="OK1-DM-yFV" secondAttribute="bottom" id="Xq1-DV-brU"/>
+                                                    <constraint firstItem="OK1-DM-yFV" firstAttribute="leading" secondItem="8b1-V4-CZ0" secondAttribute="leading" id="dwF-Da-2ht"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OK1-DM-yFV" secondAttribute="trailing" id="szH-9Y-QCC"/>
+                                                    <constraint firstItem="OK1-DM-yFV" firstAttribute="top" secondItem="8b1-V4-CZ0" secondAttribute="top" id="zGt-Vb-k2g"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите номер вашего телефона" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJZ-Fo-6ex">
+                                                <rect key="frame" x="0.0" y="113" width="303" height="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <color key="textColor" red="0.3960784376" green="0.42352941630000002" blue="0.45098039509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKc-Vy-Z1U" customClass="GoButton" customModule="pestle" customModuleProvider="target">
+                                                <rect key="frame" x="72" y="173" width="160" height="50"/>
+                                                <color key="backgroundColor" red="0.1946057081" green="0.8000642657" blue="0.87262988090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="DTL-58-qFk"/>
+                                                    <constraint firstAttribute="height" constant="50" id="wYE-Ew-kJd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <state key="normal" title="Далее">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultBackgroundColor">
+                                                        <color key="value" red="0.1946057081" green="0.8000642657" blue="0.87262988090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="sendButtonDidTap:" destination="l6h-bL-3qj" eventType="touchUpInside" id="sjl-lM-PY0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8b1-V4-CZ0" firstAttribute="centerX" secondItem="vpz-lo-vCJ" secondAttribute="centerX" id="4RO-Es-bP8"/>
+                                            <constraint firstAttribute="trailing" secondItem="FJZ-Fo-6ex" secondAttribute="trailing" id="8v9-Hk-mer"/>
+                                            <constraint firstItem="8b1-V4-CZ0" firstAttribute="top" secondItem="OvQ-Km-eYl" secondAttribute="bottom" constant="30" id="IDr-fo-gNy"/>
+                                            <constraint firstItem="OvQ-Km-eYl" firstAttribute="leading" secondItem="vpz-lo-vCJ" secondAttribute="leading" id="Ps5-lQ-mlA"/>
+                                            <constraint firstItem="OvQ-Km-eYl" firstAttribute="top" secondItem="vpz-lo-vCJ" secondAttribute="top" id="Tmb-1c-IIc"/>
+                                            <constraint firstAttribute="bottom" secondItem="NKc-Vy-Z1U" secondAttribute="bottom" id="XXd-Pu-68G"/>
+                                            <constraint firstItem="FJZ-Fo-6ex" firstAttribute="top" secondItem="8b1-V4-CZ0" secondAttribute="bottom" constant="30" id="a3f-HN-rsv"/>
+                                            <constraint firstItem="NKc-Vy-Z1U" firstAttribute="top" secondItem="FJZ-Fo-6ex" secondAttribute="bottom" priority="250" constant="40" id="cWq-Yj-fJr"/>
+                                            <constraint firstItem="NKc-Vy-Z1U" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FJZ-Fo-6ex" secondAttribute="bottom" constant="5" id="d9g-zZ-K0Z"/>
+                                            <constraint firstItem="FJZ-Fo-6ex" firstAttribute="leading" secondItem="vpz-lo-vCJ" secondAttribute="leading" id="hBs-yH-SOM"/>
+                                            <constraint firstItem="NKc-Vy-Z1U" firstAttribute="centerX" secondItem="vpz-lo-vCJ" secondAttribute="centerX" id="imX-Zx-ybb"/>
+                                            <constraint firstAttribute="trailing" secondItem="OvQ-Km-eYl" secondAttribute="trailing" id="ugb-vX-Uzd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96078431610000004" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vpz-lo-vCJ" firstAttribute="leading" secondItem="PeO-OX-xvE" secondAttribute="leading" constant="36" id="5Wm-by-z4a"/>
+                                    <constraint firstItem="vpz-lo-vCJ" firstAttribute="centerY" secondItem="PeO-OX-xvE" secondAttribute="centerY" id="mMp-Id-9VQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="vpz-lo-vCJ" secondAttribute="trailing" constant="36" id="tDj-x5-jBq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PeO-OX-xvE" secondAttribute="trailing" id="NQK-pP-bwn"/>
+                            <constraint firstItem="PeO-OX-xvE" firstAttribute="leading" secondItem="bwo-nP-SwZ" secondAttribute="leading" id="OWx-69-Qu8"/>
+                            <constraint firstItem="5il-jL-zC0" firstAttribute="top" secondItem="PeO-OX-xvE" secondAttribute="bottom" id="Wfv-Gy-Qpy"/>
+                            <constraint firstItem="PeO-OX-xvE" firstAttribute="top" secondItem="EfO-0T-kXu" secondAttribute="bottom" id="eS6-km-R36"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLayoutConstraint" destination="Wfv-Gy-Qpy" id="eMw-YL-6E8"/>
+                        <outlet property="contentView" destination="vpz-lo-vCJ" id="AwS-rd-4XV"/>
+                        <outlet property="phoneInputField" destination="OK1-DM-yFV" id="q6F-1Q-Dtl"/>
+                        <outlet property="sendButton" destination="NKc-Vy-Z1U" id="oMI-Sn-QqN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s46-hO-HHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ohp-24-k9X">
+                    <connections>
+                        <action selector="licenseAgreementDidTap:" destination="l6h-bL-3qj" id="srO-tV-0wL"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="82.3088455772114"/>
+        </scene>
+    </scenes>
+</document>

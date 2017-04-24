@@ -1,0 +1,6 @@
+framework module Pods_pestle {
+  umbrella header "Pods-pestle-umbrella.h"
+
+  export *
+  module * { export * }
+}
