@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PestleOptionTableViewCell" editingAccessoryType="disclosureIndicator" rowHeight="50" id="GcM-SP-8co" customClass="PestleOptionTableViewCell" customModule="pestle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="GcM-SP-8co" id="HD0-VF-UTw">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Упаковка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iE-PO-Pcw">
+                        <rect key="frame" x="20" y="15.5" width="66" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Не выбрана" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sD-Lr-P1Z">
+                        <rect key="frame" x="86" y="15.5" width="243" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.32156862749999998" green="0.3803921569" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4sD-Lr-P1Z" firstAttribute="centerY" secondItem="HD0-VF-UTw" secondAttribute="centerY" id="Iu9-lU-4zD"/>
+                    <constraint firstItem="9iE-PO-Pcw" firstAttribute="leading" secondItem="HD0-VF-UTw" secondAttribute="leadingMargin" id="XzE-Nx-BvI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4sD-Lr-P1Z" secondAttribute="trailing" id="muI-xY-M3Z"/>
+                    <constraint firstItem="4sD-Lr-P1Z" firstAttribute="leading" secondItem="9iE-PO-Pcw" secondAttribute="trailing" id="oyq-Zx-nk7"/>
+                    <constraint firstItem="9iE-PO-Pcw" firstAttribute="centerY" secondItem="HD0-VF-UTw" secondAttribute="centerY" id="xfN-Ln-YpZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
+            <connections>
+                <outlet property="nameLabel" destination="9iE-PO-Pcw" id="W9V-gD-U0z"/>
+                <outlet property="valueLabel" destination="4sD-Lr-P1Z" id="BPN-og-k0h"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

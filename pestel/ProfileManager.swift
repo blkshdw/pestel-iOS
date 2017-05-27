@@ -9,6 +9,7 @@
 import Foundation
 import PromiseKit
 import ObjectMapper
+import CoreLocation
 
 class ProfileManager {
   static let instance = ProfileManager()
@@ -20,18 +21,23 @@ class ProfileManager {
     }
   }
 
+  var currentCoordinate: CLLocationCoordinate2D? = nil {
+    didSet {
+      try? StorageHelper.save(currentCoordinate?.latitude, forKey: .currentLatitude)
+      try? StorageHelper.save(currentCoordinate?.latitude, forKey: .currentLongitude)
+    }
+  }
+
   var isAuthorized: Bool {
     let apiToken: String? = StorageHelper.loadObjectForKey(.apiToken)
     return apiToken != nil
   }
 
-  func updateProfile(_ closure: (User) -> Void) -> Promise<Void> {
+  func updateProfile(_ closure: (User) -> Void) {
     let profile = currentProfile ?? User()
     closure(profile)
-    //return DataManager.instance.updateUser(profile: profile).then {
-      //try? StorageHelper.save(profile.toJSONString(), forKey: .currentProfile)
-    //}
-    return Promise(value: ())
+    self.currentProfile = profile
+    return
   }
 
   func signOut() {
@@ -42,6 +48,10 @@ class ProfileManager {
   private init() {
     if let profileJSON: String = StorageHelper.loadObjectForKey(.currentProfile) {
       currentProfile =  Mapper<User>().map(JSONString: profileJSON)
+    }
+    if let latitude: Double = StorageHelper.loadObjectForKey(.currentLatitude),
+      let longitude: Double = StorageHelper.loadObjectForKey(.currentLongitude) {
+      currentCoordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
   }
 }

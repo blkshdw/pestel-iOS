@@ -14,10 +14,10 @@ enum APIPath {
   case getBouquets
   case requestAuthCode(phone: Int)
   case confirmAuthCode(phone: Int, code: String)
-  case createUser
   case updateUser
   case getUser
   case addPromoCode
+  case createOrder
 
   var rawPath: String {
     switch self {
@@ -25,20 +25,22 @@ enum APIPath {
       return "auth/\(phone)"
     case .confirmAuthCode(let phone, let code):
       return "auth/\(phone)/confirm/\(code)"
-    case .updateUser, .createUser, .getUser:
-      return "user"
+    case .updateUser, .getUser:
+      return "users/me"
     case .addPromoCode:
       return "promo_codes"
     case .getFlowers:
       return "flowers"
     case .getBouquets:
       return "bouquets"
+    case .createOrder:
+      return "orders"
     }
   }
 
   var method: HTTPMethod {
     switch self {
-    case .requestAuthCode(_), .createUser, .addPromoCode, .confirmAuthCode(_, _):
+    case .requestAuthCode(_), .addPromoCode, .confirmAuthCode(_, _), .createOrder:
       return .post
     case .updateUser:
       return .put

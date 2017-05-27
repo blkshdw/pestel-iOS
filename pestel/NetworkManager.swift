@@ -12,22 +12,20 @@ import ObjectMapper
 import PromiseKit
 
 class NetworkManager {
-  static let baseUrl = "https://otsos.top"
+  static let baseUrl = "https://staging.otsos.top"
   static let apiPrefix = "/"
 
   static func doRequest(_ path: APIPath, _ params: Parameters = [:], _ headers: HTTPHeaders = [:]) -> Promise<Any?> {
     return Promise() { fullfill, reject in
-      var params = params
-      if let apiToken: String? = StorageHelper.loadObjectForKey(.apiToken) {
-        params["api_token"] = apiToken
+      var headers = headers
+      if let apiToken: String = StorageHelper.loadObjectForKey(.apiToken) {
+        headers["Authorization"] = "Bearer " + apiToken
       }
+      headers["accept"] = "application/json"
 
       UIApplication.shared.isNetworkActivityIndicatorVisible = true
       let url = URL(string: self.baseUrl + self.apiPrefix + path.rawPath)!
-
-      var headers = headers
-      headers["accept"] = "application/json"
-
+      
       Alamofire.request(url, method: path.method, parameters: params, encoding: URLEncoding.default, headers: headers)
         .validate(statusCode: 200..<300)
         .responseJSON { response in

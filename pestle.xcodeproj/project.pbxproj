@@ -14,7 +14,17 @@
 		880006A71EABF5DD0077AF5B /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880006A61EABF5DD0077AF5B /* APIPath.swift */; };
 		880006AA1EAC0A3E0077AF5B /* RootSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880006A91EAC0A3E0077AF5B /* RootSideMenuViewController.swift */; };
 		880006AC1EAC0A4D0077AF5B /* RootSideMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880006AB1EAC0A4D0077AF5B /* RootSideMenuViewController.storyboard */; };
+		881893671EBD343F004908CD /* SelectAddressViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881893661EBD343F004908CD /* SelectAddressViewController.storyboard */; };
+		881893691EBD3D43004908CD /* SelectAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881893681EBD3D43004908CD /* SelectAddressViewController.swift */; };
 		8828BF441EADAD61000EE251 /* FlowerItemInfoAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8828BF431EADAD60000EE251 /* FlowerItemInfoAlertViewController.swift */; };
+		883BFDC81EB9FB69000C8F0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883BFDC71EB9FB69000C8F0D /* Constants.swift */; };
+		883BFDCB1EBA0393000C8F0D /* BouquetPreviewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883BFDCA1EBA0393000C8F0D /* BouquetPreviewViewController.storyboard */; };
+		883BFDCE1EBA2F17000C8F0D /* BouquetPreviewFlowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883BFDCD1EBA2F17000C8F0D /* BouquetPreviewFlowerTableViewCell.swift */; };
+		883BFDD01EBA3142000C8F0D /* BouquetPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883BFDCF1EBA3142000C8F0D /* BouquetPreviewViewController.swift */; };
+		883BFDD21EBA34D0000C8F0D /* PestleOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883BFDD11EBA34D0000C8F0D /* PestleOptionTableViewCell.swift */; };
+		883BFDD41EBA3654000C8F0D /* BouquetPreviewTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883BFDD31EBA3654000C8F0D /* BouquetPreviewTableHeaderView.xib */; };
+		883BFDD61EBA3A3C000C8F0D /* BouquetPreviewTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883BFDD51EBA3A3C000C8F0D /* BouquetPreviewTableHeaderView.swift */; };
+		883BFDDA1EBA3CE7000C8F0D /* PestleOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883BFDD91EBA3CE7000C8F0D /* PestleOptionTableViewCell.xib */; };
 		884AE3E11EAC1FCD00D0A023 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884AE3E01EAC1FCD00D0A023 /* ProfileViewController.swift */; };
 		884AE3E41EAC290E00D0A023 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884AE3E31EAC290E00D0A023 /* User.swift */; };
 		884AE3E61EAC299F00D0A023 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884AE3E51EAC299F00D0A023 /* ProfileManager.swift */; };
@@ -27,6 +37,16 @@
 		886BF4F31EAD39D7005F8F68 /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886BF4F21EAD39D7005F8F68 /* OnboardingViewController.storyboard */; };
 		886BF4F51EAD5AC6005F8F68 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886BF4F41EAD5AC6005F8F68 /* RootViewController.storyboard */; };
 		886BF4F81EAD5BF8005F8F68 /* PestelNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BF4F71EAD5BF8005F8F68 /* PestelNavigationController.swift */; };
+		888C07E01EBB8E3600A682FC /* BasketViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888C07DF1EBB8E3600A682FC /* BasketViewController.storyboard */; };
+		888C07E31EBC857100A682FC /* BasketItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C07E21EBC857100A682FC /* BasketItemTableViewCell.swift */; };
+		888C07E51EBC85EC00A682FC /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C07E41EBC85EC00A682FC /* BasketViewController.swift */; };
+		88CF8E7D1ED8CF0400BA11DC /* BadgeButonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF8E7C1ED8CF0400BA11DC /* BadgeButonView.swift */; };
+		88CF8E7F1ED8CF0E00BA11DC /* BadgeButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CF8E7E1ED8CF0E00BA11DC /* BadgeButtonView.xib */; };
+		88CF8E861ED8E9A900BA11DC /* OrderContactDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF8E851ED8E9A800BA11DC /* OrderContactDataViewController.swift */; };
+		88CF8E881ED8EFBA00BA11DC /* GeocodingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF8E871ED8EFBA00BA11DC /* GeocodingManager.swift */; };
+		88CF8E8A1ED8F3EC00BA11DC /* OrderContactDataContainerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CF8E891ED8F3EC00BA11DC /* OrderContactDataContainerViewController.storyboard */; };
+		88CF8E8C1ED8F4CA00BA11DC /* OrderContactDataContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF8E8B1ED8F4CA00BA11DC /* OrderContactDataContainerViewController.swift */; };
+		88CF8E8E1ED8FC1A00BA11DC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF8E8D1ED8FC1A00BA11DC /* Order.swift */; };
 		88D838901EACDD6B00500862 /* CreateBouquetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D8388F1EACDD6B00500862 /* CreateBouquetCollectionViewController.swift */; };
 		88D838921EACDEE400500862 /* BouquetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D838911EACDEE400500862 /* BouquetCollectionViewCell.swift */; };
 		88D838941EACDFBC00500862 /* Bouquet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D838931EACDFBC00500862 /* Bouquet.swift */; };
@@ -80,7 +100,17 @@
 		880006A61EABF5DD0077AF5B /* APIPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
 		880006A91EAC0A3E0077AF5B /* RootSideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootSideMenuViewController.swift; sourceTree = "<group>"; };
 		880006AB1EAC0A4D0077AF5B /* RootSideMenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootSideMenuViewController.storyboard; sourceTree = "<group>"; };
+		881893661EBD343F004908CD /* SelectAddressViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectAddressViewController.storyboard; sourceTree = "<group>"; };
+		881893681EBD3D43004908CD /* SelectAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAddressViewController.swift; sourceTree = "<group>"; };
 		8828BF431EADAD60000EE251 /* FlowerItemInfoAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowerItemInfoAlertViewController.swift; sourceTree = "<group>"; };
+		883BFDC71EB9FB69000C8F0D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		883BFDCA1EBA0393000C8F0D /* BouquetPreviewViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BouquetPreviewViewController.storyboard; sourceTree = "<group>"; };
+		883BFDCD1EBA2F17000C8F0D /* BouquetPreviewFlowerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouquetPreviewFlowerTableViewCell.swift; sourceTree = "<group>"; };
+		883BFDCF1EBA3142000C8F0D /* BouquetPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouquetPreviewViewController.swift; sourceTree = "<group>"; };
+		883BFDD11EBA34D0000C8F0D /* PestleOptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PestleOptionTableViewCell.swift; sourceTree = "<group>"; };
+		883BFDD31EBA3654000C8F0D /* BouquetPreviewTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BouquetPreviewTableHeaderView.xib; sourceTree = "<group>"; };
+		883BFDD51EBA3A3C000C8F0D /* BouquetPreviewTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouquetPreviewTableHeaderView.swift; sourceTree = "<group>"; };
+		883BFDD91EBA3CE7000C8F0D /* PestleOptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PestleOptionTableViewCell.xib; sourceTree = "<group>"; };
 		884AE3E01EAC1FCD00D0A023 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		884AE3E31EAC290E00D0A023 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		884AE3E51EAC299F00D0A023 /* ProfileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
@@ -93,6 +123,16 @@
 		886BF4F21EAD39D7005F8F68 /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
 		886BF4F41EAD5AC6005F8F68 /* RootViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
 		886BF4F71EAD5BF8005F8F68 /* PestelNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PestelNavigationController.swift; sourceTree = "<group>"; };
+		888C07DF1EBB8E3600A682FC /* BasketViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BasketViewController.storyboard; sourceTree = "<group>"; };
+		888C07E21EBC857100A682FC /* BasketItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketItemTableViewCell.swift; sourceTree = "<group>"; };
+		888C07E41EBC85EC00A682FC /* BasketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		88CF8E7C1ED8CF0400BA11DC /* BadgeButonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeButonView.swift; sourceTree = "<group>"; };
+		88CF8E7E1ED8CF0E00BA11DC /* BadgeButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BadgeButtonView.xib; sourceTree = "<group>"; };
+		88CF8E851ED8E9A800BA11DC /* OrderContactDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderContactDataViewController.swift; sourceTree = "<group>"; };
+		88CF8E871ED8EFBA00BA11DC /* GeocodingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodingManager.swift; sourceTree = "<group>"; };
+		88CF8E891ED8F3EC00BA11DC /* OrderContactDataContainerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderContactDataContainerViewController.storyboard; sourceTree = "<group>"; };
+		88CF8E8B1ED8F4CA00BA11DC /* OrderContactDataContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderContactDataContainerViewController.swift; sourceTree = "<group>"; };
+		88CF8E8D1ED8FC1A00BA11DC /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		88D8388F1EACDD6B00500862 /* CreateBouquetCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBouquetCollectionViewController.swift; sourceTree = "<group>"; };
 		88D838911EACDEE400500862 /* BouquetCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouquetCollectionViewCell.swift; sourceTree = "<group>"; };
 		88D838931EACDFBC00500862 /* Bouquet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bouquet.swift; sourceTree = "<group>"; };
@@ -162,6 +202,12 @@
 		880006991EABF2510077AF5B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				88CF8E8F1ED8FEBB00BA11DC /* PromoCode */,
+				88CF8E841ED8E97C00BA11DC /* OrderContactData */,
+				88CF8E7B1ED8CEC700BA11DC /* Common */,
+				881893651EBD3424004908CD /* SelectAddress */,
+				888C07DE1EBB8E1E00A682FC /* Basket */,
+				883BFDC91EBA029D000C8F0D /* BouquetPreview */,
 				886BF4EF1EAD39B8005F8F68 /* Onboarding */,
 				88D838A61EAD131900500862 /* FlowerItemInfoAlert */,
 				88D838A51EAD125300500862 /* BouquetItemInfo */,
@@ -179,6 +225,7 @@
 		8800069A1EABF25C0077AF5B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				883BFDD71EBA3CCF000C8F0D /* Cells */,
 				8800069B1EABF2830077AF5B /* GoButton.swift */,
 				8800069D1EABF2D20077AF5B /* MaskedInput.swift */,
 				886BF4F71EAD5BF8005F8F68 /* PestelNavigationController.swift */,
@@ -194,6 +241,7 @@
 				884AE3E21EAC290600D0A023 /* Model */,
 				880006A21EABF2ED0077AF5B /* DataManager.swift */,
 				884AE3E51EAC299F00D0A023 /* ProfileManager.swift */,
+				88CF8E871ED8EFBA00BA11DC /* GeocodingManager.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -207,6 +255,52 @@
 				884AE3ED1EACB53300D0A023 /* RootSideMenuNavigationController.swift */,
 			);
 			name = RootSideMenu;
+			sourceTree = "<group>";
+		};
+		881893651EBD3424004908CD /* SelectAddress */ = {
+			isa = PBXGroup;
+			children = (
+				881893661EBD343F004908CD /* SelectAddressViewController.storyboard */,
+				881893681EBD3D43004908CD /* SelectAddressViewController.swift */,
+			);
+			name = SelectAddress;
+			sourceTree = "<group>";
+		};
+		883BFDC91EBA029D000C8F0D /* BouquetPreview */ = {
+			isa = PBXGroup;
+			children = (
+				883BFDCC1EBA2E6B000C8F0D /* Views */,
+				883BFDCF1EBA3142000C8F0D /* BouquetPreviewViewController.swift */,
+				883BFDCA1EBA0393000C8F0D /* BouquetPreviewViewController.storyboard */,
+			);
+			name = BouquetPreview;
+			sourceTree = "<group>";
+		};
+		883BFDCC1EBA2E6B000C8F0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				883BFDCD1EBA2F17000C8F0D /* BouquetPreviewFlowerTableViewCell.swift */,
+				883BFDD31EBA3654000C8F0D /* BouquetPreviewTableHeaderView.xib */,
+				883BFDD51EBA3A3C000C8F0D /* BouquetPreviewTableHeaderView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		883BFDD71EBA3CCF000C8F0D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				883BFDD81EBA3CD8000C8F0D /* Option */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		883BFDD81EBA3CD8000C8F0D /* Option */ = {
+			isa = PBXGroup;
+			children = (
+				883BFDD11EBA34D0000C8F0D /* PestleOptionTableViewCell.swift */,
+				883BFDD91EBA3CE7000C8F0D /* PestleOptionTableViewCell.xib */,
+			);
+			name = Option;
 			sourceTree = "<group>";
 		};
 		884AE3DE1EAC1C1E00D0A023 /* Profile */ = {
@@ -240,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				884AE3E71EAC29C900D0A023 /* StorageHelper.swift */,
+				883BFDC71EB9FB69000C8F0D /* Constants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -277,6 +372,50 @@
 				886BF4F21EAD39D7005F8F68 /* OnboardingViewController.storyboard */,
 			);
 			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		888C07DE1EBB8E1E00A682FC /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				888C07E11EBC846000A682FC /* Views */,
+				888C07DF1EBB8E3600A682FC /* BasketViewController.storyboard */,
+				888C07E41EBC85EC00A682FC /* BasketViewController.swift */,
+			);
+			name = Basket;
+			sourceTree = "<group>";
+		};
+		888C07E11EBC846000A682FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				888C07E21EBC857100A682FC /* BasketItemTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		88CF8E7B1ED8CEC700BA11DC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				88CF8E7C1ED8CF0400BA11DC /* BadgeButonView.swift */,
+				88CF8E7E1ED8CF0E00BA11DC /* BadgeButtonView.xib */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		88CF8E841ED8E97C00BA11DC /* OrderContactData */ = {
+			isa = PBXGroup;
+			children = (
+				88CF8E851ED8E9A800BA11DC /* OrderContactDataViewController.swift */,
+				88CF8E891ED8F3EC00BA11DC /* OrderContactDataContainerViewController.storyboard */,
+				88CF8E8B1ED8F4CA00BA11DC /* OrderContactDataContainerViewController.swift */,
+			);
+			name = OrderContactData;
+			sourceTree = "<group>";
+		};
+		88CF8E8F1ED8FEBB00BA11DC /* PromoCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PromoCode;
 			sourceTree = "<group>";
 		};
 		88D8388C1EACD8D600500862 /* Views */ = {
@@ -319,6 +458,7 @@
 			isa = PBXGroup;
 			children = (
 				88D8389F1EACE2A600500862 /* OrderManager.swift */,
+				88CF8E8D1ED8FC1A00BA11DC /* Order.swift */,
 			);
 			name = OrderManager;
 			sourceTree = "<group>";
@@ -465,6 +605,7 @@
 				TargetAttributes = {
 					88FA3D251EABC6A100A73489 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 7HLY3EQ26F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -497,13 +638,20 @@
 				880006AC1EAC0A4D0077AF5B /* RootSideMenuViewController.storyboard in Resources */,
 				88FA3D311EABC6A100A73489 /* Assets.xcassets in Resources */,
 				88D8389C1EACE09E00500862 /* BouquetsCollectionViewController.storyboard in Resources */,
+				88CF8E8A1ED8F3EC00BA11DC /* OrderContactDataContainerViewController.storyboard in Resources */,
 				88FA3D2F1EABC6A100A73489 /* Main.storyboard in Resources */,
 				88FA3D621EABD16200A73489 /* RegistrationCodeInputViewController.storyboard in Resources */,
+				883BFDDA1EBA3CE7000C8F0D /* PestleOptionTableViewCell.xib in Resources */,
 				88D838AA1EAD137E00500862 /* BouquetItemInfoAlert.storyboard in Resources */,
 				884AE3F11EACD18800D0A023 /* CreateBouquetCollectionViewController.storyboard in Resources */,
 				886BF4F51EAD5AC6005F8F68 /* RootViewController.storyboard in Resources */,
 				88D838A81EAD136E00500862 /* FlowerItemInfoAlertViewController.storyboard in Resources */,
+				883BFDD41EBA3654000C8F0D /* BouquetPreviewTableHeaderView.xib in Resources */,
+				888C07E01EBB8E3600A682FC /* BasketViewController.storyboard in Resources */,
 				88D838AC1EAD18B500500862 /* BouquetItemInfoViewController.storyboard in Resources */,
+				883BFDCB1EBA0393000C8F0D /* BouquetPreviewViewController.storyboard in Resources */,
+				88CF8E7F1ED8CF0E00BA11DC /* BadgeButtonView.xib in Resources */,
+				881893671EBD343F004908CD /* SelectAddressViewController.storyboard in Resources */,
 				88FA3D3D1EABC93500A73489 /* RegistrationPhoneInputViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,16 +711,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888C07E51EBC85EC00A682FC /* BasketViewController.swift in Sources */,
 				88D838981EACE04600500862 /* BouquetFlowerCollectionViewCell.swift in Sources */,
 				88FA3D561EABCA0100A73489 /* UIViewController+addToolbar.swift in Sources */,
 				884AE3E61EAC299F00D0A023 /* ProfileManager.swift in Sources */,
 				880006A31EABF2ED0077AF5B /* DataManager.swift in Sources */,
+				88CF8E7D1ED8CF0400BA11DC /* BadgeButonView.swift in Sources */,
 				88FA3D601EABCA0100A73489 /* UIViewController+storyboardInstance.swift in Sources */,
 				88D838901EACDD6B00500862 /* CreateBouquetCollectionViewController.swift in Sources */,
 				88D838AF1EAD1F8800500862 /* BouquetQuantityTableViewCell.swift in Sources */,
 				886BF4F11EAD39C8005F8F68 /* OnboardingViewController.swift in Sources */,
 				8800069E1EABF2D20077AF5B /* MaskedInput.swift in Sources */,
+				888C07E31EBC857100A682FC /* BasketItemTableViewCell.swift in Sources */,
 				88FA3D581EABCA0100A73489 /* UITableView+autoKeyboardContentInsets.swift in Sources */,
+				883BFDCE1EBA2F17000C8F0D /* BouquetPreviewFlowerTableViewCell.swift in Sources */,
 				88FA3D571EABCA0100A73489 /* UIViewController+hideOnTapOutside.swift in Sources */,
 				880006AA1EAC0A3E0077AF5B /* RootSideMenuViewController.swift in Sources */,
 				88FA3D541EABCA0100A73489 /* UIView+addUpdateConstraintWithKeyboard.swift in Sources */,
@@ -586,29 +738,38 @@
 				88FA3D531EABCA0100A73489 /* UIImage+base64encodedString.swift in Sources */,
 				88FA3D5C1EABCA0100A73489 /* TimeInterval+toString.swift in Sources */,
 				88FA3D2C1EABC6A100A73489 /* ViewController.swift in Sources */,
+				883BFDC81EB9FB69000C8F0D /* Constants.swift in Sources */,
 				88FA3D5E1EABCA0100A73489 /* Date+WeekDates.swift in Sources */,
+				881893691EBD3D43004908CD /* SelectAddressViewController.swift in Sources */,
 				88D838A21EACE6D500500862 /* Flower.swift in Sources */,
 				88FA3D591EABCA0100A73489 /* UIViewController+presentAlert.swift in Sources */,
+				883BFDD21EBA34D0000C8F0D /* PestleOptionTableViewCell.swift in Sources */,
 				88FA3D521EABCA0100A73489 /* UIColor+SportUpColors.swift in Sources */,
 				88FA3D2A1EABC6A100A73489 /* AppDelegate.swift in Sources */,
 				88FA3D5A1EABCA0100A73489 /* Date+toString.swift in Sources */,
 				884AE3E11EAC1FCD00D0A023 /* ProfileViewController.swift in Sources */,
+				88CF8E881ED8EFBA00BA11DC /* GeocodingManager.swift in Sources */,
 				88D838A41EACE77B00500862 /* CustomBouquet.swift in Sources */,
 				886BF4ED1EAD333C005F8F68 /* DataError.swift in Sources */,
 				884AE3EC1EACB50400D0A023 /* RootViewController.swift in Sources */,
 				88FA3D661EABD27B00A73489 /* RegistrationCodeInputViewController.swift in Sources */,
+				88CF8E8E1ED8FC1A00BA11DC /* Order.swift in Sources */,
 				88FA3D501EABCA0100A73489 /* UIView+nibInstance.swift in Sources */,
+				883BFDD01EBA3142000C8F0D /* BouquetPreviewViewController.swift in Sources */,
 				880006A71EABF5DD0077AF5B /* APIPath.swift in Sources */,
 				8800069C1EABF2830077AF5B /* GoButton.swift in Sources */,
 				88FA3D5D1EABCA0100A73489 /* Double+currencyString.swift in Sources */,
 				886BF4F81EAD5BF8005F8F68 /* PestelNavigationController.swift in Sources */,
 				88FA3D641EABD26400A73489 /* RegistrationPhoneInputViewController.swift in Sources */,
 				8828BF441EADAD61000EE251 /* FlowerItemInfoAlertViewController.swift in Sources */,
+				883BFDD61EBA3A3C000C8F0D /* BouquetPreviewTableHeaderView.swift in Sources */,
 				880006A51EABF5C10077AF5B /* NetworkManager.swift in Sources */,
 				88FA3D511EABCA0100A73489 /* Character+asciiValue.swift in Sources */,
+				88CF8E861ED8E9A900BA11DC /* OrderContactDataViewController.swift in Sources */,
 				884AE3EE1EACB53300D0A023 /* RootSideMenuNavigationController.swift in Sources */,
 				88D838921EACDEE400500862 /* BouquetCollectionViewCell.swift in Sources */,
 				88D838B11EAD211C00500862 /* BouquetItemInfoViewController.swift in Sources */,
+				88CF8E8C1ED8F4CA00BA11DC /* OrderContactDataContainerViewController.swift in Sources */,
 				88FA3D5F1EABCA0100A73489 /* UISearchBar+serTextColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -735,7 +896,9 @@
 			baseConfigurationReference = C1EB87BE6DFCD02AE71C66E8 /* Pods-pestle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7HLY3EQ26F;
 				INFOPLIST_FILE = pestel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.tetofa.pestlee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -748,7 +911,9 @@
 			baseConfigurationReference = 2A11F0611BE07957402147B9 /* Pods-pestle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7HLY3EQ26F;
 				INFOPLIST_FILE = pestel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.tetofa.pestlee;
 				PRODUCT_NAME = "$(TARGET_NAME)";

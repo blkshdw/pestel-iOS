@@ -19,6 +19,8 @@ class RegistrationPhoneInputViewController: UIViewController {
   @IBOutlet weak var contentView: UIView!
   @IBOutlet weak var bottomLayoutConstraint: NSLayoutConstraint!
 
+  var finishRegistrationHandler: (() -> Void)? = nil
+
   var observers: [Any] = []
 
   override func viewDidLoad() {
@@ -70,6 +72,7 @@ class RegistrationPhoneInputViewController: UIViewController {
       .requestAuthCode(phone: Int(phoneText.onlyDigits) ?? 0).then { [weak self] _ -> Void in
         let viewController = RegistrationCodeInputViewController.storyboardInstance()!
         viewController.phoneNumberString = phoneText
+        viewController.finishRegistrationHandler = self?.finishRegistrationHandler
         self?.navigationController?.pushViewController(viewController, animated: true)
       }.catch { [weak self ] _ -> Void in
         self?.presentAlertWithMessage("Номер телефона имеет неправильный формат или уже используется")

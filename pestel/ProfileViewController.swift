@@ -10,14 +10,15 @@ import Foundation
 import UIKit
 import Eureka
 
-enum FormTags: String {
-  case firstName
-  case lastName
-  case email
-  case birthdayDate
-}
-
 class ProfileViewController: FormViewController {
+  enum FormTags: String {
+    case firstName
+    case lastName
+    case email
+    case birthdayDate
+  }
+  
+  var didDismissHandler: (() -> Void)? = nil
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -40,7 +41,17 @@ class ProfileViewController: FormViewController {
   }
 
   func rightBarItemDidTap() {
-    dismiss(animated: true, completion: nil)
+    ProfileManager.instance.updateProfile { profile in
+      profile.firstName = form.values()[FormTags.firstName.rawValue] as? String ?? ""
+      profile.lastName = form.values()[FormTags.lastName.rawValue] as? String ?? ""
+      profile.email = form.values()[FormTags.email.rawValue] as? String ?? ""
+    }
+
+    DataManager.instance.updateUser().then { [weak self] in
+      self?.dismiss(animated: true, completion: { [weak self] _ in
+        self?.didDismissHandler?()
+      })
+    }
   }
 
 

@@ -15,6 +15,7 @@ private let reuseIdentifier = "BouquetCollectionViewCell"
 class BouquetsCollectionViewController: UICollectionViewController {
   var bouquets: [Bouquet] = DataManager.instance.bouquets
   let orderManager = OrderManager.instance
+  let badgeButton = BadgeButtonView.nibInstance()!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -22,24 +23,28 @@ class BouquetsCollectionViewController: UICollectionViewController {
 
     navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
-    navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Корзина", style: .plain, target: self, action: #selector(BouquetsCollectionViewController.rightBarItemDidTap))
+    navigationItem.rightBarButtonItem = UIBarButtonItem(customView: badgeButton)
+
+    badgeButton.didTap = { [weak self] in
+      self?.present(PestelNavigationController(rootViewController: BasketViewController.storyboardInstance()!), animated: true, completion: nil)
+    }
+
     _ = DataManager.instance.fetchBouquets().then { [weak self] bouquets -> Void in
       self?.bouquets = bouquets
       self?.collectionView?.reloadData()
     }
   }
 
+  func navigationLeftButtonDidTap() {
+    present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
+  }
+
   func rightBarItemDidTap() {
-    present(PestelNavigationController(rootViewController: RegistrationPhoneInputViewController.storyboardInstance()!), animated: true, completion: nil)
   }
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     collectionView?.reloadData()
-  }
-
-  func navigationLeftButtonDidTap() {
-    present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
   }
 
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Yv-jb-Jxk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Оформить заказ-->
+        <scene sceneID="GYV-V3-zQC">
+            <objects>
+                <viewController title="Оформить заказ" id="2Yv-jb-Jxk" customClass="OrderContactDataContainerViewController" customModule="pestle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F3w-AE-yvY"/>
+                        <viewControllerLayoutGuide type="bottom" id="ces-yd-AJI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gtG-Qk-Y8P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MK3-Fq-9db">
+                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
+                                <connections>
+                                    <segue destination="20B-Ni-urv" kind="embed" identifier="embed" id="GfR-XY-9sV"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYI-al-HU7" customClass="GoButton" customModule="pestle" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.1946057081" green="0.8000642657" blue="0.87262988090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="4ZB-1v-DfQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="Fef-vn-zAK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <state key="normal" title="Оформить заказ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultBackgroundColor">
+                                        <color key="value" red="0.1946057081" green="0.8000642657" blue="0.87262988090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="confirmOrderButtonDidTap:" destination="2Yv-jb-Jxk" eventType="touchUpInside" id="Jgh-87-MI2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RYI-al-HU7" firstAttribute="leading" secondItem="gtG-Qk-Y8P" secondAttribute="leading" id="G67-vT-enZ"/>
+                            <constraint firstAttribute="trailing" secondItem="MK3-Fq-9db" secondAttribute="trailing" id="HMJ-I8-Lid"/>
+                            <constraint firstAttribute="trailing" secondItem="RYI-al-HU7" secondAttribute="trailing" id="NHB-V6-lmo"/>
+                            <constraint firstItem="MK3-Fq-9db" firstAttribute="leading" secondItem="gtG-Qk-Y8P" secondAttribute="leading" id="Oa4-D7-kBG"/>
+                            <constraint firstItem="MK3-Fq-9db" firstAttribute="top" secondItem="F3w-AE-yvY" secondAttribute="bottom" id="Rd0-ka-4NK"/>
+                            <constraint firstItem="ces-yd-AJI" firstAttribute="top" secondItem="RYI-al-HU7" secondAttribute="bottom" id="Upi-cD-tXs"/>
+                            <constraint firstItem="RYI-al-HU7" firstAttribute="top" secondItem="MK3-Fq-9db" secondAttribute="bottom" id="zgG-f9-hEh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="orderConfirmButton" destination="RYI-al-HU7" id="KPS-FV-OKB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zv0-1o-BNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="159"/>
+        </scene>
+        <!--Order Contact Data View Controller-->
+        <scene sceneID="ohc-Os-Qnc">
+            <objects>
+                <viewController id="20B-Ni-urv" customClass="OrderContactDataViewController" customModule="pestle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UiY-0y-Y9c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yn7-wk-KgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="190"/>
+        </scene>
+    </scenes>
+</document>

@@ -25,6 +25,8 @@ class RegistrationCodeInputViewController: UIViewController {
 
   var observers: [NSObjectProtocol] = []
 
+  var finishRegistrationHandler: (() -> Void)? = nil
+
   override func viewDidLoad() {
     hideKeyboardOnTapOutside()
     codeField.inputAccessoryView = UIView()
@@ -43,7 +45,9 @@ class RegistrationCodeInputViewController: UIViewController {
       guard isValid else { return }
       self?.codeField.isEnabled = false
       _ = DataManager.instance.confirmCode(code: self?.codeField.text?.onlyDigits ?? "").then { [weak self] _ -> Void in
-        self?.navigationController?.pushViewController(ProfileViewController(), animated: true)
+        let viewController = ProfileViewController()
+        viewController.didDismissHandler = self?.finishRegistrationHandler
+        self?.navigationController?.pushViewController(viewController, animated: true)
       }.always {
         self?.codeField.isEnabled = true
       }

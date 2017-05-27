@@ -30,6 +30,8 @@ class BouquetItemInfoViewController: UIViewController {
     }
   }
 
+  var dismissHandler: (() -> Void)? = nil
+
   enum ScreenType {
     case addItem(Bouquet)
     case editItem(OrderBouquet)
@@ -73,15 +75,17 @@ class BouquetItemInfoViewController: UIViewController {
     switch screenType {
     case .addItem(let bouquet):
       OrderManager.instance.bouquets.append(OrderBouquet(bouquet: bouquet, quantity: self.quantity))
-      dismiss(animated: true, completion: nil)
-    default:
-      break
+    case .editItem(let orderBouquet):
+      orderBouquet.quantity = quantity
     }
+    dismissHandler?()
+    dismiss(animated: true, completion: nil)
   }
 
   @IBAction func deleteButtonDidTap(_ sender: Any) {
     guard let index = OrderManager.instance.bouquets.index(where: { $0.bouquet.id == screenType.bouquet.id }) else { return }
     OrderManager.instance.bouquets.remove(at: index)
+    dismissHandler?()
     dismiss(animated: true, completion: nil)
   }
 

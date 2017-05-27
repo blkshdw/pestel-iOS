@@ -27,6 +27,9 @@ class StorageHelper {
     case flowers
     case bouquets
 
+    case currentLatitude
+    case currentLongitude
+
     var storageType: StorageType {
       switch self {
       case .apiToken:

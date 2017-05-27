@@ -20,10 +20,12 @@ class RootViewController: PestelNavigationController {
     guard !isLoaded else {
       return configureSideMenu()
     }
+    setNavigationBarHidden(true, animated: false)
     setViewControllers([OnboardingViewController.storyboardInstance()!], animated: true)
   }
 
   func configureSideMenu() {
+    setNavigationBarHidden(false, animated: true)
     SideMenuManager.menuLeftNavigationController = sideMenuVC
     SideMenuManager.menuRightNavigationController = nil
     SideMenuManager.menuAddPanGestureToPresent(toView: navigationBar)

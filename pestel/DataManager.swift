@@ -42,6 +42,18 @@ class DataManager {
     }
   }
 
+  func updateUser() -> Promise<Void> {
+    return NetworkManager.doRequest(.updateUser).then { result in
+      guard let jsonMap = result as? [String: Any] else { throw DataError.unexpectedResponseFormat }
+      ProfileManager.instance.updateProfile { profile in
+        let map = Map(mappingType: .fromJSON, JSON: jsonMap)
+        profile.mapping(map: map)
+        profile.isNew = false
+      }
+      return Promise(value: ())
+    }
+  }
+
   func requestAuthCode(phone: Int) -> Promise<Void> {
     return NetworkManager.doRequest(.requestAuthCode(phone: phone)).then { result in
       self.phone = phone
@@ -50,7 +62,16 @@ class DataManager {
 
   func confirmCode(code: String) -> Promise<Void> {
     guard let phone = phone else { return Promise(error: DataError.unknown) }
-    return NetworkManager.doRequest(.confirmAuthCode(phone: phone, code: code)).asVoid()
+    return NetworkManager.doRequest(.confirmAuthCode(phone: phone, code: code)).then { result -> Void in
+      guard let jsonMap = result as? [String: Any] else { throw DataError.unexpectedResponseFormat }
+      if let userMap = jsonMap["user"] as? [String: Any] {
+        let map = Map(mappingType: .fromJSON, JSON: userMap)
+        ProfileManager.instance.currentProfile?.mapping(map: map)
+      }
+      if let token = jsonMap["token"] as? String {
+        try? StorageHelper.save(token, forKey: .apiToken)
+      }
+    }
   }
 
   func fetchBouquets() -> Promise<[Bouquet]> {
@@ -60,6 +81,10 @@ class DataManager {
       return Promise(value: bouquets)
 
     }
+  }
+
+  func createOrder(order: Order) -> Promise<Void> {
+    return NetworkManager.doRequest(.createOrder, order.toJSON()).asVoid()
   }
 
 }

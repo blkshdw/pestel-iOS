@@ -10,9 +10,17 @@ import Foundation
 import UIKit
 
 extension UIView {
-  internal class func getNibInstance<T:UIView>() -> T? {
-    return UINib(nibName: String(describing: self), bundle: nil).instantiate(withOwner: nil, options: nil).first as? T
 
+  internal class var className: String {
+    return String(describing: self)
+  }
+
+  internal class var classNamedNib: UINib? {
+    return UINib(nibName: String(describing: self), bundle: nil)
+  }
+
+  internal class func getNibInstance<T:UIView>() -> T? {
+    return classNamedNib?.instantiate(withOwner: nil, options: nil).first as? T
   }
 
   class func nibInstance() -> Self? {
