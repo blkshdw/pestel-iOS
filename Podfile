@@ -19,6 +19,6 @@ target 'pestle' do
   pod 'GooglePlaces', '~> 2.2'
   pod 'SwiftDate', '~> 4.0'
   pod 'KeychainAccess', '~> 3.0'
-  pod 'CreditCardForm'
+  pod 'CreditCardRow'
 
 end

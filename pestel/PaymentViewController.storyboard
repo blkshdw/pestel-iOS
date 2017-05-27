@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3ZC-Rr-udh">
+            <objects>
+                <viewController id="bXJ-xF-gBP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kON-3y-OEV"/>
+                        <viewControllerLayoutGuide type="bottom" id="iun-Cq-fOM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z5L-sd-fn2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7C-HR-Stv" customClass="CreditCardFormView" customModule="CreditCardForm">
+                                <rect key="frame" x="37" y="70" width="300" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HDK-as-ZBO"/>
+                                    <constraint firstAttribute="height" constant="200" id="k0p-xF-Yhf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W7C-HR-Stv" firstAttribute="centerX" secondItem="Z5L-sd-fn2" secondAttribute="centerX" id="ImH-48-JAA"/>
+                            <constraint firstItem="W7C-HR-Stv" firstAttribute="top" secondItem="kON-3y-OEV" secondAttribute="bottom" constant="50" id="XmX-ke-wHn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UbJ-W2-ORs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="84"/>
+        </scene>
+    </scenes>
+</document>

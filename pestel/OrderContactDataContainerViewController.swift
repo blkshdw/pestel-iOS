@@ -33,11 +33,17 @@ class OrderContactDataContainerViewController: UIViewController {
       present(alert, animated: true, completion: nil)
       return
     }
+    view.isUserInteractionEnabled = false
     contactDataViewController.updateProfile().then {
-      OrderManager.instance.createOrder().then { _ -> Void in
+      OrderManager.instance.createOrder().then { [weak self] _ -> Void in
         let alertController = UIAlertController(title: "Заказ оформлен", message: "", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Ок", style: .default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Ок", style: .default, handler: { _ in
+          self?.dismiss(animated: true, completion: nil)
+        }))
+        self?.present(alertController, animated: true, completion: nil)
       }
+      }.always { [weak self] in
+        self?.view.isUserInteractionEnabled = true
     }
   }
 }

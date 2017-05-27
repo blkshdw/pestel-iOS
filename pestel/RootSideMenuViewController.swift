@@ -20,6 +20,10 @@ private enum Row: Int {
 
   var viewController: UIViewController? {
     switch self {
+    case .user:
+      let viewController = ProfileViewController()
+      viewController.screenMode = .edit
+      return viewController
     case .createBouqet:
       return CreateBouquetCollectionViewController.storyboardInstance()!
     case .orderExistingBouqet:

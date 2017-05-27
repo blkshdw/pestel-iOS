@@ -28,6 +28,9 @@ class OrderManager {
     let order = Order()
     order.customBouquets = customBouquets
     order.bouquets = bouquets
+    if let profile = ProfileManager.instance.currentProfile {
+      order.deliveryAddress = profile.street + ", " + profile.building + ", " + profile.appt
+    }
     return DataManager.instance.createOrder(order: order).then { _ -> Void in
       self.customBouquets = []
       self.bouquets = []

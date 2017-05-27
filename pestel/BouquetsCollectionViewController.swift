@@ -45,6 +45,7 @@ class BouquetsCollectionViewController: UICollectionViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     collectionView?.reloadData()
+    badgeButton.badgeLabel.text = "\(OrderManager.instance.bouquets.map { $0.quantity }.reduce(0, +))"
   }
 
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

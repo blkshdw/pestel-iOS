@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Eureka
 import PromiseKit
+import CreditCardRow
 
 class OrderContactDataViewController: FormViewController {
   enum FormTags: String {
@@ -85,6 +86,9 @@ class OrderContactDataViewController: FormViewController {
         self?.parent?.navigationController?.pushViewController(addressVC, animated: true)
       }
     }
+
+    form +++ Section("Кредитная карта")
+      <<< CreditCardRow()
   }
 
   func updateProfile() -> Promise<Void> {

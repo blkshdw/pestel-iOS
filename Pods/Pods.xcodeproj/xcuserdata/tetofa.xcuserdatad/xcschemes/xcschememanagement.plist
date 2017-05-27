@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CreditCardRow-CreditCardRow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CreditCardRow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Eureka.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,17 +72,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2B61181422173ABCA366C5A8B3E82AA4</key>
+		<key>28DE8A317CBD41012FD2879BC3C13EA7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5EB849EE122B741459AE135216A54C73</key>
+		<key>29E56A4451E1EB14C109FF026C2D195C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>675A114988AE198732ED4AD726408964</key>
+		<key>3BA2D1602E4B1708826776F1C4F9B198</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>841BC9F1FF1E078CBEC73FD33E5BD9DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86CB6EB05DFBCABF2E094C8BF25EC1BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88B2375852D98D2BA686E813B56694E3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +117,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB75BE3CB559669D9988D7E230AEC257</key>
+		<key>9B72D3028DD3EF6A6870FF37C00DC2E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,12 +132,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D006DEA722F5598981928D29FBB52BD8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DD5B300A0D66E1D631ACE4C58C382239</key>
+		<key>E19A31E97B3BC842BFB22D423E6EB583</key>
 		<dict>
 			<key>primary</key>
 			<true/>

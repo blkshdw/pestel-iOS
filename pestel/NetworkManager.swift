@@ -26,7 +26,7 @@ class NetworkManager {
       UIApplication.shared.isNetworkActivityIndicatorVisible = true
       let url = URL(string: self.baseUrl + self.apiPrefix + path.rawPath)!
       
-      Alamofire.request(url, method: path.method, parameters: params, encoding: URLEncoding.default, headers: headers)
+      Alamofire.request(url, method: path.method, parameters: params, encoding: path.encoding, headers: headers)
         .validate(statusCode: 200..<300)
         .responseJSON { response in
           UIApplication.shared.isNetworkActivityIndicatorVisible = false

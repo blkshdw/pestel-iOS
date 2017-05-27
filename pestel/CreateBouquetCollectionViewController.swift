@@ -77,6 +77,7 @@ class CreateBouquetCollectionViewController: UIViewController {
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    badgeButton.badgeLabel.text = "\(OrderManager.instance.customBouquets.map { $0.quantity }.reduce(0, +))"
     refresh()
   }
 

@@ -202,7 +202,6 @@
 		880006991EABF2510077AF5B /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				88CF8E8F1ED8FEBB00BA11DC /* PromoCode */,
 				88CF8E841ED8E97C00BA11DC /* OrderContactData */,
 				88CF8E7B1ED8CEC700BA11DC /* Common */,
 				881893651EBD3424004908CD /* SelectAddress */,
@@ -409,13 +408,6 @@
 				88CF8E8B1ED8F4CA00BA11DC /* OrderContactDataContainerViewController.swift */,
 			);
 			name = OrderContactData;
-			sourceTree = "<group>";
-		};
-		88CF8E8F1ED8FEBB00BA11DC /* PromoCode */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = PromoCode;
 			sourceTree = "<group>";
 		};
 		88D8388C1EACD8D600500862 /* Views */ = {

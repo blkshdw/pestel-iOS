@@ -13,6 +13,7 @@ import ObjectMapper
 class Order: Mappable {
   var customBouquets: [CustomOrderBouquet] = []
   var bouquets: [OrderBouquet] = []
+  var deliveryAddress: String = ""
 
   required init?(map: Map) {
     return nil
@@ -25,5 +26,6 @@ class Order: Mappable {
   func mapping(map: Map) {
     customBouquets <- map["customBouquets"]
     bouquets <- map["bouquets"]
+    deliveryAddress <- map["deliveryAddress"]
   }
 }
